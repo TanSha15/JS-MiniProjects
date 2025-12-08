@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #f1f1f1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #00bcd4;
+    margin-bottom: 30px;
+}
+
+#counter {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    display: inline-block;
+    color: #76ff03;
+    padding: 15px 30px;
+    border: 3px solid #76ff03;
+    border-radius: 12px;
+    background-color: #1e1e1e;
+    box-shadow: 0 0 10px rgba(118, 255, 3, 0.3);
+    transition: all 0.3s ease;
+}
+
+button {
+    padding: 15px 20px;
+    margin: 10px;
+    font-size: 1.5rem;
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+    border: 2px solid #333;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button i {
+    pointer-events: none; /* Prevent icon from blocking button clicks */
+}
+
+button:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+#dec {
+    border-color: #e53935;
+}
+
+#inc {
+    border-color: #43a047;
+}
+
+#res {
+    border-color: #fbc02d;
+}
+
+/* Icon Colors */
+#dec i {
+    color: #e53935;
+}
+
+#inc i {
+    color: #43a047;
+}
+
+#res i {
+    color: #fbc02d;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    #counter {
+        font-size: 3rem;
+    }
+
+    button {
+        font-size: 1.2rem;
+        padding: 10px 14px;
+    }
+}
