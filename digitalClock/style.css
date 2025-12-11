@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(to right, #141e30, #243b55);
+}
+
+.clockContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('image/photo-1747077138172-590c023ec442.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.clock {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 60px 40px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+}
+
+p {
+    font-size: 6rem;
+    color: #ffffff;
+    letter-spacing: 3px;
+    margin: 0 0 40px 0;
+    word-break: break-word;
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.35);
+    transform: scale(1.05);
+}
+
